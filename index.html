@@ -4,88 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-     <link rel="icon" type="images/png" href="logo.png">
+    <link rel="icon" type="images/png" href="logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>E & L Islamic Store</title>
 </head>
 <body>
+   
     <header>
         <img class="logo" src="./logo.png" alt="Bussiness logo">
-        <h1>E & L Islamic Store</h1>
+         <div class="navMenu" id="navMenu">
+            <i class="bx bx-window-close" onclick="closeMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="bx bx-menu" onclick="openMenu()"></i>
     </header>
-    <div class="container">
 
-    
-        <h2>Welcome to E & L Islamic Store</h2>
-
-        <div class="sub-container">
-            
-
-            <p>We are selling islamic products which are halal, reliable and durable for the use of muslims.</p>
-
-            <p> We are into selling products like male and female Jalamias, male caps, Islamic medicines such as black seed oil, zytoon oil, hulba seed and powder, camel urine, Quran & other islamic books, raisin, zamzam water, sidiru water, and so much more.</p>
-
-        </div>
-
-        <h2>Product Images</h2>
-        <div class="button">
-        <div class="sub-container">
-
-             <div class="img-container">
-                <img class="product" src="./black-seed.png" alt="Photo">
-                <span>Black seed oil</span>
-            </div>
-
-             <div class="img-container">
-                <img class="product" src="./camel.png" alt="Photo">
-                <span>Camel Urine</span>
-            </div>
-
-             <div class="img-container">
-                <img class="product" src="./dress.jpg" alt="Photo">
-                <span>Dresses</span>
-            </div>
-
-             <div class="img-container">
-                <img class="product" src="./hijab.png" alt="Photo">
-                <span>Hijab</span>
-            </div>
-
-            <div class="img-container">
-                <img class="product" src="./jalamia.png" alt="Photo">
-                <span>Jalamia</span>
-            </div>
-
-            <div class="img-container">
-                <img class="product" src="./k-water.jpg" alt="Photo">
-                <span>Khal water</span>
-            </div>
-
-            <div class="img-container">
-                <img class="product" src="./male-cap.png" alt="Photo">
-                <span>Male cap</span>
-            </div>
-
-            <div class="img-container">
-                <img class="product" src="./quran.png" alt="Photo">
-                <span>Qur'an</span>
-            </div>
-
-            <div class="img-container">
-                <img class="product" src="./shoe.png" alt="Photo">
-                <span>Shoes</span>
-            </div>
-
-             <div class="img-container">
-                <img class="product" src="./sidiru.png" alt="Photo">
-                <span>Sidiru water</span>
-            </div>
-        </div>
-        </div>
-        <div class="btn">
-            <p><i>Click the button below to order our products</i></p>
-            <button onclick="window.open('mailto: aalateefat@gmail.com?subject=Connecting with E and L islamic store &body=I%20want%20to%20order%20your%20product.......') ">Shop now</button>
-        </div>
+    <div id="custom-alert" class="custom-alert">
+            <img src="./logo.png" alt="Alert Image">
+            <button id="close-btn">Close</button>
     </div>
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="show">
+                <span class="first">Welcome</span>
+                <span class="second">to</span>
+            </div>
+            <h1>E & L Islamic Store</h1>
+            <p>We are selling islamic products which are halal, reliable and durable for the use of muslims.</p>
+            <div class="button">
+                <a href="./about.html" class="btn"><b>About us</b></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./jalamia.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>About <span>Us</span></h2>
+             <p> We are into selling products like male and female Jalamias, male caps, Islamic medicines such as black seed oil, zytoon oil, hulba seed and powder, camel urine, quran & other islamic books, raise, zamzam water, sidiru water, and so much more.</p>
+             <p>We are also into selling beautiful dresses which can be worn by both muslims and non-muslims and the dresses are made out of passion which makes them come out attractive and it always have a lot of value in the society.</p>
+            <a href="./about.html" class="btn">More about</a>
+        </div>
+    </section>
+    
+    <section class="product" id="product">   
+        <h2>Our Products</h2>
+            <div class="product-img">
+                <div class="sub-container">
+
+                    <div class="img-container">
+                        <img class="products" src="./black-seed.png" alt="Photo">
+                        <span>Black seed oil</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./camel.png" alt="Photo">
+                        <span>Camel Urine</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./dress.jpg" alt="Photo">
+                        <span>Dresses</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./hijab.png" alt="Photo">
+                        <span>Hijab</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./jalamia.png" alt="Photo">
+                        <span>Jalamia</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./k-water.jpg" alt="Photo">
+                        <span>Khal water</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./male-cap.png" alt="Photo">
+                        <span>Male cap</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./quran.png" alt="Photo">
+                        <span>Qur'an</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./shoe.png" alt="Photo">
+                        <span>Shoes</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./sidiru.png" alt="Photo">
+                        <span>Sidiru water</span>
+                    </div>
+                </div>
+            </div>    
+        </section>     
+        
+        
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <p>Fill in the form below to order our amazinig products</p>
+           <form id="contact-form" action="https://formsubmit.co/adeyemofaozaan@gmail.com" method="post">
+                <fieldset>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required placeholder="Input your name here......"><br><br>
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address" required placeholder="Input your location here......"><br><br>
+                    <label for="tel">Telephone number:</label><br>
+                    <input type="tel" id="tel" name="Telephone-number" required placeholder="Input your phone number here......"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Input your Email address here......" required><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" id="message" required placeholder="Input product you want to order or comment our organization" cols="25" rows="10"></textarea><br><br>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Undo</button>
+                </fieldset>
+           </form>
+        </section>
     <footer>
         <small>
         <div>Email address:</div>
@@ -97,6 +144,29 @@
         <div>Registered by:</div>
         <span>Genaral of corporate affairs commission</span>
         </small>
-
+    </footer>
 </body>
+
+<script>
+    function showCustomAlert() {
+        document.getElementById('custom-alert').style.display = 'block';
+        
+    }
+
+    document.getElementById('close-btn').addEventListener('click', function() {
+        document.getElementById('custom-alert').style.display = 'none';
+
+    });
+
+    showCustomAlert();
+    alert('Dear Customers,\n\nThe holidays are here again... and while the kids are home, it’s the perfect time to fill their minds with something meaningful. Instead of endless cartoons and gadgets, why not give them stories that build faith, character, and love for Allah? We’ve put together two special summer packages of Islamic books for children aged 2–16. Thoughtfully picked, easy to read, and full of beautiful lessons they’ll carry for lifeShop  and save 10% of your order, use promo code "summer"at the checkous📚 Package 1: 13 amazing titles – now ₦24,300 (instead of ₦27,000📚 Package 2: 9 prophetic & Islamic stories – now ₦7,650 (instead of ₦8,500 And yes, there’s 10% off each —Send a DM to order, and let’s make this holiday count — for their hearts and their hereafter.');
+
+     var navMenu = document.getElementById("navMenu");
+        function openMenu() {
+            navMenu.style.right = "0";
+        }
+        function closeMenu() {
+            navMenu.style.right = "-200px";
+        }
+</script>
 </html>
