@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/png" href="logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>E & L Islamic Store</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./logo.png" alt="Bussiness logo">
+         <div class="navMenu" id="navMenu">
+            <i class="bx bx-window-close" onclick="closeMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="bx bx-menu" onclick="openMenu()"></i>
+    </header>
+    <section class="sub-header" id="sub-header">
+         <h1><span>Contact</span> Us</h1>
+    </section>
+        <div id="custom-alert" class="custom-alert">
+            <img src="./logo.png" alt="Alert Image">
+            <button id="close-btn">Close</button>
+        </div>
+
+    <section class="map">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3054.3245468538976!2d3.5279803!3d6.7249982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103be9670a5f9369%3A0x3f590c6f36524e68!2sE%26L%20Islamic%20Stores!5e1!3m2!1sen!2sng!4v1755380988293!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-text">
+            <h2>Find Us Here</h2>
+            <p>We are located at CDA, 1st Avenue, Mayor Gas line, Likorodu, Ogijo, Ogun state, Nigeria.</p>
+            <p>We are open from 8:00 AM to 6:00 PM daily.</p>
+            <p>For inquiries, please contact us via the form below or through our email and phone number provided in the footer.</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <p>Fill in the form below to order our amazinig products</p>
+        <form id="contact-form" action="https://formsubmit.co/adeyemofaozaan@gmail.com" method="post">
+            <fieldset>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required placeholder="Input your name here......"><br><br>
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address" required placeholder="Input your location here......"><br><br>
+                <label for="tel">Telephone number:</label><br>
+                <input type="tel" id="tel" name="Telephone-number" required placeholder="Input your phone number here......"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Input your Email address here......" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea name="message" id="message" required placeholder="Input product you want to order or comment our organization" cols="25" rows="10">Hi</textarea><br><br>
+                <button type="submit">Submit</button>
+                <button type="reset">Undo</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <small>
+        <div>Email address:</div>
+        <span class="line" onclick="window.open('mailto: aalateefat@gmail.com?subject=Connecting with you E and L islamic store &body=I%20want%20to%20get%20more%20information%20about%20your%20business.......')">aalateefat@gmail.com</span>
+        <div>Contact:</div>
+        <span>08063399201, 09053792134</span>
+        <div>Business Reg No:</div>
+        <span>3408731</span>
+        <div>Registered by:</div>
+        <span>Genaral of corporate affairs commission</span>
+        </small>
+    </footer>
+</body>
+
+<script>    
+
+     var navMenu = document.getElementById("navMenu");
+        function openMenu() {
+            navMenu.style.right = "0";
+        }
+        function closeMenu() {
+            navMenu.style.right = "-200px";
+        }
+</script>
+</html>

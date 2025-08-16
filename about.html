@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/png" href="logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>E & L Islamic Store</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./logo.png" alt="Bussiness logo">
+         <div class="navMenu" id="navMenu">
+            <i class="bx bx-window-close" onclick="closeMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="bx bx-menu" onclick="openMenu()"></i>
+    </header>
+    <section class="sub-header" id="sub-header">
+         <h1><span>About</span> Us</h1>
+    </section>
+        <div id="custom-alert" class="custom-alert">
+            <img src="./logo.png" alt="Alert Image">
+            <button id="close-btn">Close</button>
+        </div>
+
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="./jalamia.png" alt="">
+            </div>
+            <div class="about-text">
+                <h2>About <span>Us</span></h2>
+                <p> We are into selling products like male and female Jalamias, male caps, Islamic medicines such as black seed oil, zytoon oil, hulba seed and powder, camel urine, quran & other islamic books, raise, zamzam water, sidiru water, and so much more.</p>
+                <p>We are also into selling beautiful dresses which can be worn by both muslims and non-muslims and the dresses are made out of passion which makes them come out attractive and it always have a lot of value in the society.</p>
+                <p>Our products are sold in cheap and affordable price which wil be delivered to your doorstep as soon as possible. We hope you make the right choice by filling our contact form to order our products then the price will be communicated to you.</p>
+            </div>
+        </section>
+        <section class="others" id="others">
+            <div class="sub-text-title">
+                <h2>Why <span>us?</span></h2>
+            </div>
+            <div class="others-img">
+                <img src="./logo.png" alt="">
+                <span class="circle-spin"></span>
+            </div>
+            <div class="others-text">
+                <p>
+                    - We sell islamic products which are halal and durable for the use of muslims in wholesales and retails.<br><br> 
+                    - We also sell gowns that not only meets but exceeds expectations and can be worn by both muslims and non-muslims.<br><br>
+                    - We are also into selling islamic books which are both entertaining and educative.<br><br>
+                </p>
+            </div>
+    </section>
+    <footer>
+        <small>
+        <div>Email address:</div>
+        <span class="line" onclick="window.open('mailto: aalateefat@gmail.com?subject=Connecting with you E and L islamic store &body=I%20want%20to%20get%20more%20information%20about%20your%20business.......')">aalateefat@gmail.com</span>
+        <div>Contact:</div>
+        <span>08063399201, 09053792134</span>
+        <div>Business Reg No:</div>
+        <span>3408731</span>
+        <div>Registered by:</div>
+        <span>Genaral of corporate affairs commission</span>
+        </small>
+    </footer>
+</body>
+
+<script>    
+
+     var navMenu = document.getElementById("navMenu");
+        function openMenu() {
+            navMenu.style.right = "0";
+        }
+        function closeMenu() {
+            navMenu.style.right = "-200px";
+        }
+</script>
+</html>

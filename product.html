@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/png" href="logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>E & L Islamic Store</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./logo.png" alt="Bussiness logo">
+         <div class="navMenu" id="navMenu">
+            <i class="bx bx-window-close" onclick="closeMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="bx bx-menu" onclick="openMenu()"></i>
+    </header>
+    <section class="sub-header" id="sub-header">
+         <h1>Our <span>Products</span></h1>
+    </section>
+        <div id="custom-alert" class="custom-alert">
+            <img src="./logo.png" alt="Alert Image">
+            <button id="close-btn">Close</button>
+        </div>
+
+        <section class="product" id="product">   
+            <div class="product-img">
+                <div class="sub-container">
+
+                    <div class="img-container">
+                        <img class="products" src="./black-seed.png" alt="Photo">
+                        <span>Black seed oil</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./camel.png" alt="Photo">
+                        <span>Camel Urine</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./dress.jpg" alt="Photo">
+                        <span>Dresses</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./hijab.png" alt="Photo">
+                        <span>Hijab</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./jalamia.png" alt="Photo">
+                        <span>Jalamia</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./k-water.jpg" alt="Photo">
+                        <span>Khal water</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./male-cap.png" alt="Photo">
+                        <span>Male cap</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./quran.png" alt="Photo">
+                        <span>Qur'an</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./shoe.png" alt="Photo">
+                        <span>Shoes</span>
+                    </div>
+
+                    <div class="img-container">
+                        <img class="products" src="./sidiru.png" alt="Photo">
+                        <span>Sidiru water</span>
+                    </div>
+                </div>
+            </div>    
+        </section> 
+    <footer>
+        <small>
+        <div>Email address:</div>
+        <span class="line" onclick="window.open('mailto: aalateefat@gmail.com?subject=Connecting with you E and L islamic store &body=I%20want%20to%20get%20more%20information%20about%20your%20business.......')">aalateefat@gmail.com</span>
+        <div>Contact:</div>
+        <span>08063399201, 09053792134</span>
+        <div>Business Reg No:</div>
+        <span>3408731</span>
+        <div>Registered by:</div>
+        <span>Genaral of corporate affairs commission</span>
+        </small>
+    </footer>
+</body>
+
+<script>    
+
+     var navMenu = document.getElementById("navMenu");
+        function openMenu() {
+            navMenu.style.right = "0";
+        }
+        function closeMenu() {
+            navMenu.style.right = "-200px";
+        }
+</script>
+</html>
